@@ -183,3 +183,34 @@ body.dark #mode-toggle {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+/* RESPONSIVE GRID */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .item img {
+    height: auto;
+  }
+
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .upload-section input,
+  .upload-section select,
+  .upload-section button {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .duration {
+    font-size: 1rem;
+  }
+}
