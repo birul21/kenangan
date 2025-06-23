@@ -71,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
       secretContent.style.display = "block";
       secretMsg.textContent = "✅ Kode benar, halaman rahasia dibuka!";
       secretMsg.style.color = "green";
+      const music = document.getElementById("secret-music");
+  music.play(); // ← musik mulai
     } else {
       secretMsg.textContent = "❌ Salah dong sayang 😅";
       secretMsg.style.color = "red";
