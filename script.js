@@ -60,3 +60,25 @@ function hitungHariJadian() {
 }
 
 hitungHariJadian();
+
+// Halaman Rahasia
+const unlockBtn = document.getElementById('unlock-btn');
+const secretInput = document.getElementById('secret-code');
+const secretMsg = document.getElementById('secret-msg');
+const secretContent = document.getElementById('secret-content');
+
+// Ganti dengan kode tanggal jadian kamu
+const kodeRahasia = "251224"; // 12 Agustus 2023 → 120823
+
+unlockBtn.addEventListener("click", () => {
+  const kodeMasuk = secretInput.value.trim();
+  if (kodeMasuk === kodeRahasia) {
+    secretContent.style.display = "block";
+    secretMsg.textContent = "✅ Kode benar, halaman rahasia dibuka!";
+    secretMsg.style.color = "green";
+  } else {
+    secretMsg.textContent = "❌ Salah dong sayang 😅";
+    secretMsg.style.color = "red";
+    secretContent.style.display = "none";
+  }
+});
