@@ -299,3 +299,8 @@ body.dark footer {
   border-radius: 8px;
   display: inline-block;
 }
+
+/* Sembunyikan caption di galeri */
+.item .caption {
+  display: none;
+}
