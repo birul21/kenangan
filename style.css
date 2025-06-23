@@ -261,3 +261,41 @@ body.dark #mode-toggle {
 .hidden {
   display: none;
 }
+
+/* Sembunyikan caption dan tanggal di layar kecil (HP) */
+@media (max-width: 768px) {
+  .item .caption,
+  .item .date {
+    display: none;
+  }
+}
+
+body.dark .item p {
+  color: #ddd;
+}
+
+body.dark .caption,
+body.dark .date,
+body.dark .upload-section label,
+body.dark select,
+body.dark option {
+  color: #eee;
+}
+
+body.dark #secret-msg {
+  color: #eee;
+}
+
+body.dark footer {
+  color: #ccc;
+}
+
+.lightbox p {
+  color: #fff;
+  margin-top: 1rem;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
